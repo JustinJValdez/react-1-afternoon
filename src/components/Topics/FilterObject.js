@@ -43,7 +43,7 @@ class FilterObject extends Component{
 
 render(){
   return(
-    <div className="puzzleText">
+    <div className="puzzleBox filterObjectPB">
       <h4>Filter Object</h4>
       <span className="puzzleText">
         Input:{ JSON.stringify(this.state.unFilteredArray, null, 10) }
@@ -54,15 +54,13 @@ render(){
       />
 
       <button className="confirmationButton" 
-      onClick={this.filterInput(this.state.userInput)}>
+      onClick={()=>this.filterInput(this.state.userInput)}>
         Filter
       </button>
 
       <span className="resultsBox filterObjectRB">
-    Results:{ JSON.stringify(this.state.filteredEmployees, null, 10) }
+    Results:{ JSON.stringify(this.state.filteredArray, null, 10) }
       </span>
-
-
     </div>
      )
   }
