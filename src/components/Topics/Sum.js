@@ -28,7 +28,7 @@ render(){
     <div className="puzzleBox sumPB">
       <h4>Sum</h4>
       <input className="inputLine" type="number"
-      onChange={(e)=>this.num1Change(e.target.value)}
+      onChange={(e) => this.num1Change(e.target.value)}
       />
       <input className="inputLine" type="number"
       onChange={(e)=>this.num2Change(e.target.value)}

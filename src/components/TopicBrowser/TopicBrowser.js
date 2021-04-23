@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import EvenAndOdd from '../Topics/EvenAndOdd';
 import FilterObject from '../Topics/FilterObject';
 import FilterString from '../Topics/FilterString';
+import Multiply from '../Topics/Multiply';
 import Palindrome from '../Topics/Palindrome';
 import Sum from '../Topics/Sum'
 
@@ -16,7 +17,8 @@ class TopicBrowser extends Component{
         <FilterObject/>
         <FilterString/>
         <Palindrome/>
-        <Sum/>
+        <Sum />
+        <Multiply />
       </div>
     )
   }
